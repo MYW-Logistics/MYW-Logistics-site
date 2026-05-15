@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(awk 'NR==320' \"C:/M/Marketing/网站制作/index.html\")",
+      "Bash(awk 'NR==320 {print substr\\($0, length\\($0\\)-200\\)}' \"C:/M/Marketing/网站制作/index.html\")"
+    ]
+  }
+}

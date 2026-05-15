@@ -149,6 +149,68 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           }
         }
       ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://www.mywlogistics.com.au/services.html#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How long does shipping from China to Australia take?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sea freight from major Chinese ports (Shanghai, Ningbo, Shenzhen, Guangzhou) to Australian capital cities takes 18–28 days port-to-port, plus 5–10 days for inland transit and customs clearance. Air freight is 3–7 days door-to-door. Express courier services such as DHL or FedEx run 3–5 days."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Should I choose sea freight (FCL or LCL) or air freight?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Choose sea freight when total cost matters more than speed and you can plan 4–6 weeks ahead — it suits heavy, bulky or low-value-per-kg goods. Choose air freight when goods are high-value, urgent, perishable, or when stockouts cost more than the freight premium. Full Container Load (FCL) typically beats Less than Container Load (LCL) above 13–15 CBM."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you handle Australian customs clearance and ChAFTA preference?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. We are a licensed Australian customs broker and lodge Full Import Declarations (FID) for every shipment over AUD 1,000. We classify your goods to the correct HS code, verify the ChAFTA Certificate of Origin (Form FA), apply the 0% preferential duty where eligible, and handle GST and deferred GST scheme arrangements."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the minimum order quantity to ship from China to Australia?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "There is no fixed minimum. LCL (Less than Container Load) sea freight starts from 1 CBM. A 20-foot container holds about 28 CBM. The break-even point between LCL and a full 20ft container is typically 13–15 CBM. For air freight, anything under 500 kg is usually cheaper via courier than dedicated air cargo."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you offer door-to-door delivery across Australia?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. We deliver to Melbourne, Sydney, Brisbane, Perth, Adelaide and regional locations. Our service includes container unpack at port or warehouse, line-haul to the destination state, and last-mile delivery to your business or residence. We can also unpack at our Melbourne warehouse for distribution."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you handle Australian biosecurity and ISPM 15 fumigation?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. We coordinate Department of Agriculture, Fisheries and Forestry (DAFF) biosecurity inspections, verify ISPM 15 heat-treated or fumigated wood packaging, arrange treatment or fumigation when ordered, and manage tailgate inspections and container unpack at approved facilities."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you provide warehousing in Melbourne?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. We offer short and long-term warehousing at our Scoresby facility in Melbourne, including pick-and-pack, inventory management, container unpack and distribution support for Australian-wide e-commerce and B2B fulfilment."
+          }
+        }
+      ]
     }
   ]
 }
@@ -248,6 +310,20 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:cen
 .btn-gold{background:var(--gold);color:var(--navy);padding:0.9rem 2.2rem;font-family:'DM Sans',sans-serif;font-size:1.05rem;font-weight:500;letter-spacing:0.05em;text-decoration:none;display:inline-block;transition:background 0.2s;border:none;cursor:pointer;}
 .btn-gold:hover{background:var(--gold-light);}
 
+/* FAQ */
+.faq-sec{background:#faf8f4;padding:5rem 4rem;}
+.faq-inner{max-width:920px;margin:0 auto;}
+.faq-eyebrow{font-size:0.96rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--gold);font-weight:500;margin-bottom:0.75rem;display:flex;align-items:center;gap:0.55rem;}
+.faq-eyebrow::before{content:'';display:block;width:18px;height:1px;background:var(--gold);}
+.faq-title{font-family:'Playfair Display',serif;font-size:clamp(1.9rem,2.5vw,2.5rem);font-weight:700;color:var(--navy);line-height:1.2;margin-bottom:2.25rem;}
+details.faq{background:#fff;border:1px solid rgba(0,0,0,0.08);margin-bottom:0.75rem;transition:border-color 0.2s,box-shadow 0.2s;}
+details.faq[open]{border-color:rgba(200,151,58,0.4);box-shadow:0 4px 16px rgba(13,31,45,0.06);}
+details.faq summary{padding:1.15rem 1.5rem;cursor:pointer;font-weight:500;color:var(--navy);font-size:1.04rem;list-style:none;display:flex;align-items:center;justify-content:space-between;gap:1rem;}
+details.faq summary::-webkit-details-marker{display:none;}
+details.faq summary::after{content:'+';color:var(--gold);font-size:1.5rem;font-weight:300;transition:transform 0.2s;flex-shrink:0;}
+details.faq[open] summary::after{content:'−';}
+details.faq .faq-body{padding:0 1.5rem 1.3rem;font-size:0.98rem;line-height:1.75;color:#34495a;}
+
 footer{background:#080f15;padding:2.5rem 4rem 1.75rem;border-top:1px solid rgba(200,151,58,0.1);}
 .ft{display:grid;grid-template-columns:1.5fr 1fr 1fr 1.2fr;gap:2.5rem;margin-bottom:2rem;}
 .fl-logo{display:flex;align-items:center;gap:0.55rem;text-decoration:none;}
@@ -273,7 +349,8 @@ footer{background:#080f15;padding:2.5rem 4rem 1.75rem;border-top:1px solid rgba(
   nav{padding:0.85rem 1.5rem;}
   .nav-links{display:none;flex-direction:column;position:absolute;top:100%;left:0;right:0;background:#fff;padding:1.5rem 2rem;gap:1.25rem;border-bottom:1px solid rgba(0,0,0,0.08);box-shadow:0 8px 24px rgba(0,0,0,0.1);}
   .nav-links.open{display:flex;}.hamburger{display:flex;}.nav-cta{display:none;}
-  .page-header,.main-svc,.add-svc,.ports,.cta-band{padding-left:1.5rem;padding-right:1.5rem;}
+  .page-header,.main-svc,.add-svc,.ports,.cta-band,.faq-sec{padding-left:1.5rem;padding-right:1.5rem;}
+  .faq-sec{padding-top:3.5rem;padding-bottom:3.5rem;}
   .page-header{padding-top:7rem;padding-bottom:3rem;}
   .ms-grid,.ports-grid{grid-template-columns:1fr;}
   .add-grid{grid-template-columns:1fr 1fr;}
@@ -539,6 +616,49 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <li>Australia-wide delivery available</li>
       </ul>
     </div>
+  </div>
+</section>
+
+<section class="faq-sec reveal" id="faq" aria-labelledby="faq-heading">
+  <div class="faq-inner">
+    <div class="faq-eyebrow">Frequently Asked Questions</div>
+    <h2 class="faq-title" id="faq-heading">Common questions about our services</h2>
+
+    <details class="faq" open>
+      <summary>How long does shipping from China to Australia take?</summary>
+      <div class="faq-body">Sea freight from major Chinese ports (Shanghai, Ningbo, Shenzhen, Guangzhou) to Australian capital cities takes 18–28 days port-to-port, plus 5–10 days for inland transit and customs clearance. Air freight is 3–7 days door-to-door. Express courier services such as DHL or FedEx run 3–5 days.</div>
+    </details>
+
+    <details class="faq">
+      <summary>Should I choose sea freight (FCL or LCL) or air freight?</summary>
+      <div class="faq-body">Choose sea freight when total cost matters more than speed and you can plan 4–6 weeks ahead — it suits heavy, bulky or low-value-per-kg goods. Choose air freight when goods are high-value, urgent, perishable, or when stockouts cost more than the freight premium. Full Container Load (FCL) typically beats Less than Container Load (LCL) above 13–15 CBM.</div>
+    </details>
+
+    <details class="faq">
+      <summary>Do you handle Australian customs clearance and ChAFTA preference?</summary>
+      <div class="faq-body">Yes. We are a licensed Australian customs broker and lodge Full Import Declarations (FID) for every shipment over AUD 1,000. We classify your goods to the correct HS code, verify the ChAFTA Certificate of Origin (Form FA), apply the 0% preferential duty where eligible, and handle GST and deferred GST scheme arrangements.</div>
+    </details>
+
+    <details class="faq">
+      <summary>What is the minimum order quantity to ship from China to Australia?</summary>
+      <div class="faq-body">There is no fixed minimum. LCL (Less than Container Load) sea freight starts from 1 CBM. A 20-foot container holds about 28 CBM. The break-even point between LCL and a full 20ft container is typically 13–15 CBM. For air freight, anything under 500 kg is usually cheaper via courier than dedicated air cargo.</div>
+    </details>
+
+    <details class="faq">
+      <summary>Do you offer door-to-door delivery across Australia?</summary>
+      <div class="faq-body">Yes. We deliver to Melbourne, Sydney, Brisbane, Perth, Adelaide and regional locations. Our service includes container unpack at port or warehouse, line-haul to the destination state, and last-mile delivery to your business or residence. We can also unpack at our Melbourne warehouse for distribution.</div>
+    </details>
+
+    <details class="faq">
+      <summary>Do you handle Australian biosecurity and ISPM 15 fumigation?</summary>
+      <div class="faq-body">Yes. We coordinate Department of Agriculture, Fisheries and Forestry (DAFF) biosecurity inspections, verify ISPM 15 heat-treated or fumigated wood packaging, arrange treatment or fumigation when ordered, and manage tailgate inspections and container unpack at approved facilities.</div>
+    </details>
+
+    <details class="faq">
+      <summary>Do you provide warehousing in Melbourne?</summary>
+      <div class="faq-body">Yes. We offer short and long-term warehousing at our Scoresby facility in Melbourne, including pick-and-pack, inventory management, container unpack and distribution support for Australian-wide e-commerce and B2B fulfilment.</div>
+    </details>
+
   </div>
 </section>
 

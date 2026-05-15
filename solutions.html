@@ -108,6 +108,60 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           }
         }
       ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://www.mywlogistics.com.au/solutions.html#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What's the difference between commercial and personal cargo solutions?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Commercial solutions are designed for businesses importing or exporting goods for resale — including ChAFTA preference, GST handling, customs brokerage and warehousing. Personal cargo solutions are for individuals shipping household goods, personal effects or vehicles, where biosecurity rules apply differently and customs valuation works on purchase or replacement value rather than commercial invoice."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you handle full international relocation between China and Australia?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Our international relocation service is end-to-end: origin packing, export customs in China, ocean or air freight, Australian customs clearance, biosecurity inspection, container unpack and destination delivery. We work with families, individual professionals and returning migrants."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I ship personal effects without being GST-registered?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Individuals can import personal effects without a business or GST registration. Unaccompanied personal effects (UPEs) that have been owned and used for at least 12 months can often be imported duty and GST-free under Item 4 of Schedule 4 to the Customs Tariff Act, subject to declaration and biosecurity rules."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you ship motor vehicles, motorcycles or boats from China?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. We arrange RoRo and containerised shipping for personal vehicles, motorcycles and boats. Note: vehicle imports to Australia require a Vehicle Import Approval (VIA) from the Department of Infrastructure, Transport, Regional Development, Communications and the Arts before shipment. We can guide you through the approval process."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How does the process work from quote to delivery?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Four steps: (1) you send us details of the cargo, origin and destination; (2) we issue a written quote and confirm timeline; (3) you book and pay the agreed amount, we arrange origin pickup and freight; (4) we clear Australian customs, handle biosecurity and deliver to your door. We provide milestone updates throughout."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you offer Mandarin-speaking support for the whole journey?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Our team in Melbourne, Guangzhou and Shanghai speaks both English and Mandarin. Documentation, supplier coordination, customs paperwork and customer communication are all handled bilingually."
+          }
+        }
+      ]
     }
   ]
 }
@@ -196,6 +250,20 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:cen
 .cta-band p{font-size:1.05rem;color:rgba(255,255,255,0.55);margin-bottom:2rem;}
 .btn-gold{background:var(--gold);color:var(--navy);padding:0.9rem 2.2rem;font-family:'DM Sans',sans-serif;font-size:1.05rem;font-weight:500;text-decoration:none;display:inline-block;transition:background 0.2s;border:none;cursor:pointer;}
 .btn-gold:hover{background:var(--gold-light);}
+
+/* FAQ */
+.faq-sec{background:#faf8f4;padding:5rem 4rem;}
+.faq-inner{max-width:920px;margin:0 auto;}
+.faq-eyebrow{font-size:0.96rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--gold);font-weight:500;margin-bottom:0.75rem;display:flex;align-items:center;gap:0.55rem;}
+.faq-eyebrow::before{content:'';display:block;width:18px;height:1px;background:var(--gold);}
+.faq-title{font-family:'Playfair Display',serif;font-size:clamp(1.9rem,2.5vw,2.5rem);font-weight:700;color:var(--navy);line-height:1.2;margin-bottom:2.25rem;}
+details.faq{background:#fff;border:1px solid rgba(0,0,0,0.08);margin-bottom:0.75rem;transition:border-color 0.2s,box-shadow 0.2s;}
+details.faq[open]{border-color:rgba(200,151,58,0.4);box-shadow:0 4px 16px rgba(13,31,45,0.06);}
+details.faq summary{padding:1.15rem 1.5rem;cursor:pointer;font-weight:500;color:var(--navy);font-size:1.04rem;list-style:none;display:flex;align-items:center;justify-content:space-between;gap:1rem;}
+details.faq summary::-webkit-details-marker{display:none;}
+details.faq summary::after{content:'+';color:var(--gold);font-size:1.5rem;font-weight:300;transition:transform 0.2s;flex-shrink:0;}
+details.faq[open] summary::after{content:'−';}
+details.faq .faq-body{padding:0 1.5rem 1.3rem;font-size:0.98rem;line-height:1.75;color:#34495a;}
 .btn-outline-w{background:transparent;color:#fff;padding:0.9rem 2.2rem;border:1px solid rgba(255,255,255,0.25);font-family:'DM Sans',sans-serif;font-size:1.05rem;text-decoration:none;display:inline-block;transition:all 0.2s;margin-left:0.75rem;}
 .btn-outline-w:hover{border-color:rgba(255,255,255,0.5);}
 
@@ -224,7 +292,8 @@ footer{background:#080f15;padding:2.5rem 4rem 1.75rem;border-top:1px solid rgba(
   nav{padding:0.85rem 1.5rem;}
   .nav-links{display:none;flex-direction:column;position:absolute;top:100%;left:0;right:0;background:#fff;padding:1.5rem 2rem;gap:1.25rem;border-bottom:1px solid rgba(0,0,0,0.08);box-shadow:0 8px 24px rgba(0,0,0,0.1);}
   .nav-links.open{display:flex;}.hamburger{display:flex;}.nav-cta{display:none;}
-  .page-header,.sol-section,.hiw,.cta-band{padding-left:1.5rem;padding-right:1.5rem;}
+  .page-header,.sol-section,.hiw,.cta-band,.faq-sec{padding-left:1.5rem;padding-right:1.5rem;}
+  .faq-sec{padding-top:3.5rem;padding-bottom:3.5rem;}
   .page-header{padding-top:7rem;padding-bottom:3rem;}
   .sol-grid{grid-template-columns:1fr;}
   .sol-card{grid-template-columns:1fr;}.sol-card-img{min-height:200px;}
@@ -424,6 +493,44 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <h4>Delivered &amp; Done</h4>
       <p>Your cargo arrives safely at its destination. We send you updates throughout and are available to answer any questions along the way.</p>
     </div>
+  </div>
+</section>
+
+<section class="faq-sec reveal" id="faq" aria-labelledby="faq-heading">
+  <div class="faq-inner">
+    <div class="faq-eyebrow">Frequently Asked Questions</div>
+    <h2 class="faq-title" id="faq-heading">Common questions about our logistics solutions</h2>
+
+    <details class="faq" open>
+      <summary>What's the difference between commercial and personal cargo solutions?</summary>
+      <div class="faq-body">Commercial solutions are designed for businesses importing or exporting goods for resale — including ChAFTA preference, GST handling, customs brokerage and warehousing. Personal cargo solutions are for individuals shipping household goods, personal effects or vehicles, where biosecurity rules apply differently and customs valuation works on purchase or replacement value rather than commercial invoice.</div>
+    </details>
+
+    <details class="faq">
+      <summary>Do you handle full international relocation between China and Australia?</summary>
+      <div class="faq-body">Yes. Our international relocation service is end-to-end: origin packing, export customs in China, ocean or air freight, Australian customs clearance, biosecurity inspection, container unpack and destination delivery. We work with families, individual professionals and returning migrants.</div>
+    </details>
+
+    <details class="faq">
+      <summary>Can I ship personal effects without being GST-registered?</summary>
+      <div class="faq-body">Yes. Individuals can import personal effects without a business or GST registration. Unaccompanied personal effects (UPEs) that have been owned and used for at least 12 months can often be imported duty and GST-free under Item 4 of Schedule 4 to the Customs Tariff Act, subject to declaration and biosecurity rules.</div>
+    </details>
+
+    <details class="faq">
+      <summary>Do you ship motor vehicles, motorcycles or boats from China?</summary>
+      <div class="faq-body">Yes. We arrange RoRo and containerised shipping for personal vehicles, motorcycles and boats. Note: vehicle imports to Australia require a Vehicle Import Approval (VIA) from the Department of Infrastructure, Transport, Regional Development, Communications and the Arts before shipment. We can guide you through the approval process.</div>
+    </details>
+
+    <details class="faq">
+      <summary>How does the process work from quote to delivery?</summary>
+      <div class="faq-body">Four steps: (1) you send us details of the cargo, origin and destination; (2) we issue a written quote and confirm timeline; (3) you book and pay the agreed amount, we arrange origin pickup and freight; (4) we clear Australian customs, handle biosecurity and deliver to your door. We provide milestone updates throughout.</div>
+    </details>
+
+    <details class="faq">
+      <summary>Do you offer Mandarin-speaking support for the whole journey?</summary>
+      <div class="faq-body">Yes. Our team in Melbourne, Guangzhou and Shanghai speaks both English and Mandarin. Documentation, supplier coordination, customs paperwork and customer communication are all handled bilingually.</div>
+    </details>
+
   </div>
 </section>
 

@@ -154,6 +154,68 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           }
         }
       ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://www.mywlogistics.com.au/services-zh.html#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "从中国发货到澳大利亚需要多久？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "从中国主要港口（上海、宁波、深圳、广州）到澳大利亚首府城市，海运通常 18–28 天港到港，加上 5–10 天内陆运输和清关时间。空运门到门 3–7 天。DHL、FedEx 等快递服务 3–5 天。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "应该选择海运（整柜/拼柜）还是空运？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "如果总成本比速度更重要、能够提前 4–6 周规划，且货物体积大或重，建议选择海运。如果货物单位重量价值高、紧急、易腐，或缺货成本高于运费溢价，建议选择空运。当总体积超过 13–15 CBM 时，整柜（FCL）通常比拼柜（LCL）更划算。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "你们提供澳洲清关和 ChAFTA 自贸协定办理吗？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "是的。我们是持牌的澳大利亚清关代理，所有价值 1000 澳元以上的货物都由我们提交完整进口申报（FID）。我们负责正确的 HS 编码归类、核验 ChAFTA 原产地证书（Form FA）、在符合条件时申请 0% 优惠关税，并办理 GST 和递延 GST 方案。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "从中国发货到澳大利亚有最低起运量吗？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "没有固定起运量。LCL 拼柜海运最低 1 CBM 即可起运，20 尺标准集装箱约 28 CBM。LCL 与 20 尺整柜的临界点通常在 13–15 CBM 之间。空运方面，500 公斤以下走空运快递通常比走专线空运更划算。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "你们提供澳大利亚境内的门到门派送吗？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "是的。我们派送至墨尔本、悉尼、布里斯班、珀斯、阿德莱德及其他地区。服务包括港口或仓库拆柜、长途运输至目的州、以及最后一公里送达您的公司或住址。我们也可以在墨尔本仓库拆柜后做分销派送。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "你们办理澳大利亚生物安全检疫和 ISPM 15 熏蒸吗？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "是的。我们对接澳大利亚农业部（DAFF）的生物安全检验，核验 ISPM 15 热处理或熏蒸木质包装，必要时安排处理或熏蒸，并管理码头尾门检验和指定场所的拆柜检验。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "你们提供墨尔本的仓储服务吗？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "是的。我们在墨尔本 Scoresby 提供短期和长期仓储，含分拣打包、库存管理、集装箱拆柜，并支持面向澳洲全境的电商和 B2B 派送。"
+          }
+        }
+      ]
     }
   ]
 }
@@ -208,6 +270,20 @@ nav.solid{background:rgba(6,16,60,0.97);border-bottom:1px solid rgba(200,151,58,
 .cta-band p{font-size:0.84rem;color:rgba(6,16,60,0.65);margin-top:0.35rem;}
 .btn-deep{background:var(--deep);color:#fff;padding:0.88rem 2.2rem;font-size:1.04rem;font-weight:700;text-decoration:none;display:inline-block;transition:background 0.2s;font-family:"Noto Sans SC",sans-serif;white-space:nowrap;}
 .btn-deep:hover{background:var(--deep-mid);}
+
+/* FAQ */
+.faq-sec{background:var(--off);padding:5rem 4rem;}
+.faq-inner{max-width:920px;margin:0 auto;}
+.faq-eyebrow{font-size:0.96rem;letter-spacing:0.12em;color:var(--gold);font-weight:500;margin-bottom:0.75rem;display:flex;align-items:center;gap:0.55rem;}
+.faq-eyebrow::before{content:'';display:block;width:18px;height:1px;background:var(--gold);}
+.faq-title{font-family:'Playfair Display','Noto Sans SC',serif;font-size:clamp(1.6rem,2.3vw,2.2rem);font-weight:700;color:var(--deep);line-height:1.35;margin-bottom:2.25rem;}
+details.faq{background:#fff;border:1px solid var(--border);margin-bottom:0.75rem;transition:border-color 0.2s,box-shadow 0.2s;}
+details.faq[open]{border-color:rgba(200,151,58,0.4);box-shadow:0 4px 16px rgba(6,16,60,0.06);}
+details.faq summary{padding:1.15rem 1.5rem;cursor:pointer;font-weight:500;color:var(--deep);font-size:1.04rem;list-style:none;display:flex;align-items:center;justify-content:space-between;gap:1rem;}
+details.faq summary::-webkit-details-marker{display:none;}
+details.faq summary::after{content:'+';color:var(--gold);font-size:1.5rem;font-weight:300;transition:transform 0.2s;flex-shrink:0;}
+details.faq[open] summary::after{content:'−';}
+details.faq .faq-body{padding:0 1.5rem 1.3rem;font-size:0.98rem;line-height:1.95;color:var(--text-mid);}
 footer{background:#03091f;padding:3rem 4rem 1.75rem;}
 .ft{display:grid;grid-template-columns:1.6fr 1fr 1fr 1.2fr;gap:2.5rem;margin-bottom:2rem;}
 .fl-logo{display:flex;align-items:center;gap:0.65rem;text-decoration:none;margin-bottom:0.85rem;}
@@ -276,7 +352,8 @@ footer{background:#03091f;padding:3rem 4rem 1.75rem;}
   .hamburger{display:flex;}
   .nav-cta{display:none;}
   .page-header{padding:6rem 1.5rem 3rem;}
-  .main-svc,.add-svc,.ports-sec,.cta-band{padding-left:1.5rem;padding-right:1.5rem;}
+  .main-svc,.add-svc,.ports-sec,.cta-band,.faq-sec{padding-left:1.5rem;padding-right:1.5rem;}
+  .faq-sec{padding-top:3.5rem;padding-bottom:3.5rem;}
   .ms-grid,.ports-grid{grid-template-columns:1fr;}
   .add-grid{grid-template-columns:1fr 1fr;}
   .cta-band{flex-direction:column;text-align:center;}
@@ -492,6 +569,49 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <li>珀斯 WA</li><li>全澳大利亚派送</li>
       </ul>
     </div>
+  </div>
+</section>
+
+<section class="faq-sec reveal" id="faq" aria-labelledby="faq-heading">
+  <div class="faq-inner">
+    <div class="faq-eyebrow">常见问题</div>
+    <h2 class="faq-title" id="faq-heading">关于我们服务的常见问题</h2>
+
+    <details class="faq" open>
+      <summary>从中国发货到澳大利亚需要多久？</summary>
+      <div class="faq-body">从中国主要港口（上海、宁波、深圳、广州）到澳大利亚首府城市，海运通常 18–28 天港到港，加上 5–10 天内陆运输和清关时间。空运门到门 3–7 天。DHL、FedEx 等快递服务 3–5 天。</div>
+    </details>
+
+    <details class="faq">
+      <summary>应该选择海运（整柜 / 拼柜）还是空运？</summary>
+      <div class="faq-body">如果总成本比速度更重要、能够提前 4–6 周规划，且货物体积大或重，建议选择海运。如果货物单位重量价值高、紧急、易腐，或缺货成本高于运费溢价，建议选择空运。当总体积超过 13–15 CBM 时，整柜（FCL）通常比拼柜（LCL）更划算。</div>
+    </details>
+
+    <details class="faq">
+      <summary>你们提供澳洲清关和 ChAFTA 自贸协定办理吗？</summary>
+      <div class="faq-body">是的。我们是持牌的澳大利亚清关代理，所有价值 1000 澳元以上的货物都由我们提交完整进口申报（FID）。我们负责正确的 HS 编码归类、核验 ChAFTA 原产地证书（Form FA）、在符合条件时申请 0% 优惠关税，并办理 GST 和递延 GST 方案。</div>
+    </details>
+
+    <details class="faq">
+      <summary>从中国发货到澳大利亚有最低起运量吗？</summary>
+      <div class="faq-body">没有固定起运量。LCL 拼柜海运最低 1 CBM 即可起运，20 尺标准集装箱约 28 CBM。LCL 与 20 尺整柜的临界点通常在 13–15 CBM 之间。空运方面，500 公斤以下走空运快递通常比走专线空运更划算。</div>
+    </details>
+
+    <details class="faq">
+      <summary>你们提供澳大利亚境内的门到门派送吗？</summary>
+      <div class="faq-body">是的。我们派送至墨尔本、悉尼、布里斯班、珀斯、阿德莱德及其他地区。服务包括港口或仓库拆柜、长途运输至目的州、以及最后一公里送达您的公司或住址。我们也可以在墨尔本仓库拆柜后做分销派送。</div>
+    </details>
+
+    <details class="faq">
+      <summary>你们办理澳大利亚生物安全检疫和 ISPM 15 熏蒸吗？</summary>
+      <div class="faq-body">是的。我们对接澳大利亚农业部（DAFF）的生物安全检验，核验 ISPM 15 热处理或熏蒸木质包装，必要时安排处理或熏蒸，并管理码头尾门检验和指定场所的拆柜检验。</div>
+    </details>
+
+    <details class="faq">
+      <summary>你们提供墨尔本的仓储服务吗？</summary>
+      <div class="faq-body">是的。我们在墨尔本 Scoresby 提供短期和长期仓储，含分拣打包、库存管理、集装箱拆柜，并支持面向澳洲全境的电商和 B2B 派送。</div>
+    </details>
+
   </div>
 </section>
 

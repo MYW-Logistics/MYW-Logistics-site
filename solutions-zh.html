@@ -113,6 +113,60 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           }
         }
       ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://www.mywlogistics.com.au/solutions-zh.html#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "商业货运和个人货运方案有什么区别？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "商业货运方案针对企业进出口贸易，包含 ChAFTA 自贸协定优惠申请、GST 处理、清关报关和仓储；个人货运方案则面向个人客户运输家居用品、私人物品或车辆，生物安全检疫规则不同，海关估价采用购入价或重置价，而非商业发票金额。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "你们提供中澳全程国际搬家服务吗？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "是的。我们的国际搬家服务是端到端的：起运地打包、中国出口报关、海运或空运、澳大利亚清关、生物安全检疫、拆柜和目的地派送。服务对象包括家庭、个人专业人士和回流移民。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "未注册 GST 的个人也能从中国进口私人物品吗？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "可以。个人无需注册公司或 GST 即可进口私人物品。已拥有并使用满 12 个月的非随身行李（UPE）通常可根据《关税法》附表 4 第 4 项免税免 GST 进口，前提是按要求申报并通过生物安全检疫。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "你们承运从中国进口的小汽车、摩托车或船只吗？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "可以。我们为个人车辆、摩托车和船只安排滚装（RoRo）或整柜运输。注意：车辆进口澳大利亚前必须取得澳大利亚基础设施部签发的车辆进口批准（VIA）。我们可以协助您完成审批流程。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "从询价到送达的完整流程是什么？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "四步：（1）您告知货物详情、起运地与目的地；（2）我们出具书面报价并确认时效；（3）您下单付款，我们安排起运地提货和运输；（4）我们办理澳洲清关、处理检疫，并将货物送至您指定地址。全程提供节点跟进。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "你们提供全程中文支持吗？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "是的。我们在墨尔本、广州、上海的团队同时使用中文和英文。单证、供应商对接、清关文件以及客户沟通全程双语处理。"
+          }
+        }
+      ]
     }
   ]
 }
@@ -167,6 +221,20 @@ nav.solid{background:rgba(6,16,60,0.97);border-bottom:1px solid rgba(200,151,58,
 .cta-band p{font-size:0.84rem;color:rgba(6,16,60,0.65);margin-top:0.35rem;}
 .btn-deep{background:var(--deep);color:#fff;padding:0.88rem 2.2rem;font-size:1.04rem;font-weight:700;text-decoration:none;display:inline-block;transition:background 0.2s;font-family:"Noto Sans SC",sans-serif;white-space:nowrap;}
 .btn-deep:hover{background:var(--deep-mid);}
+
+/* FAQ */
+.faq-sec{background:var(--off);padding:5rem 4rem;}
+.faq-inner{max-width:920px;margin:0 auto;}
+.faq-eyebrow{font-size:0.96rem;letter-spacing:0.12em;color:var(--gold);font-weight:500;margin-bottom:0.75rem;display:flex;align-items:center;gap:0.55rem;}
+.faq-eyebrow::before{content:'';display:block;width:18px;height:1px;background:var(--gold);}
+.faq-title{font-family:'Playfair Display','Noto Sans SC',serif;font-size:clamp(1.6rem,2.3vw,2.2rem);font-weight:700;color:var(--deep);line-height:1.35;margin-bottom:2.25rem;}
+details.faq{background:#fff;border:1px solid var(--border);margin-bottom:0.75rem;transition:border-color 0.2s,box-shadow 0.2s;}
+details.faq[open]{border-color:rgba(200,151,58,0.4);box-shadow:0 4px 16px rgba(6,16,60,0.06);}
+details.faq summary{padding:1.15rem 1.5rem;cursor:pointer;font-weight:500;color:var(--deep);font-size:1.04rem;list-style:none;display:flex;align-items:center;justify-content:space-between;gap:1rem;}
+details.faq summary::-webkit-details-marker{display:none;}
+details.faq summary::after{content:'+';color:var(--gold);font-size:1.5rem;font-weight:300;transition:transform 0.2s;flex-shrink:0;}
+details.faq[open] summary::after{content:'−';}
+details.faq .faq-body{padding:0 1.5rem 1.3rem;font-size:0.98rem;line-height:1.95;color:var(--text-mid);}
 footer{background:#03091f;padding:3rem 4rem 1.75rem;}
 .ft{display:grid;grid-template-columns:1.6fr 1fr 1fr 1.2fr;gap:2.5rem;margin-bottom:2rem;}
 .fl-logo{display:flex;align-items:center;gap:0.65rem;text-decoration:none;margin-bottom:0.85rem;}
@@ -226,7 +294,8 @@ footer{background:#03091f;padding:3rem 4rem 1.75rem;}
   .hamburger{display:flex;}
   .nav-cta{display:none;}
   .page-header{padding:6rem 1.5rem 3rem;}
-  .sol-sec,.hiw-sec,.cta-band{padding-left:1.5rem;padding-right:1.5rem;}
+  .sol-sec,.hiw-sec,.cta-band,.faq-sec{padding-left:1.5rem;padding-right:1.5rem;}
+  .faq-sec{padding-top:3.5rem;padding-bottom:3.5rem;}
   .sol-grid{grid-template-columns:1fr;}
   .sol-card{grid-template-columns:1fr;}.sol-card-img{min-height:200px;}
   .sol-full{grid-template-columns:1fr;}.sf-img{min-height:220px;}.sf-body{padding:2.5rem 1.5rem;}
@@ -414,6 +483,44 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="hs"><div class="hs-num">02</div><span class="hs-icon">📋</span><h4>收到定制报价</h4><p>收到透明的定制报价，所有费用清晰列明，无隐藏费用。</p></div>
     <div class="hs"><div class="hs-num">03</div><span class="hs-icon">🚢</span><h4>我们全程处理</h4><p>从提货、订舱、清关到配送，专属负责人全程跟进更新。</p></div>
     <div class="hs"><div class="hs-num">04</div><span class="hs-icon">✅</span><h4>安全送达</h4><p>货物安全到达目的地，全程实时追踪，随时可查询状态。</p></div>
+  </div>
+</section>
+
+<section class="faq-sec reveal" id="faq" aria-labelledby="faq-heading">
+  <div class="faq-inner">
+    <div class="faq-eyebrow">常见问题</div>
+    <h2 class="faq-title" id="faq-heading">关于我们物流方案的常见问题</h2>
+
+    <details class="faq" open>
+      <summary>商业货运和个人货运方案有什么区别？</summary>
+      <div class="faq-body">商业货运方案针对企业进出口贸易，包含 ChAFTA 自贸协定优惠申请、GST 处理、清关报关和仓储；个人货运方案则面向个人客户运输家居用品、私人物品或车辆，生物安全检疫规则不同，海关估价采用购入价或重置价，而非商业发票金额。</div>
+    </details>
+
+    <details class="faq">
+      <summary>你们提供中澳全程国际搬家服务吗？</summary>
+      <div class="faq-body">是的。我们的国际搬家服务是端到端的：起运地打包、中国出口报关、海运或空运、澳大利亚清关、生物安全检疫、拆柜和目的地派送。服务对象包括家庭、个人专业人士和回流移民。</div>
+    </details>
+
+    <details class="faq">
+      <summary>未注册 GST 的个人也能从中国进口私人物品吗？</summary>
+      <div class="faq-body">可以。个人无需注册公司或 GST 即可进口私人物品。已拥有并使用满 12 个月的非随身行李（UPE）通常可根据《关税法》附表 4 第 4 项免税免 GST 进口，前提是按要求申报并通过生物安全检疫。</div>
+    </details>
+
+    <details class="faq">
+      <summary>你们承运从中国进口的小汽车、摩托车或船只吗？</summary>
+      <div class="faq-body">可以。我们为个人车辆、摩托车和船只安排滚装（RoRo）或整柜运输。注意：车辆进口澳大利亚前必须取得澳大利亚基础设施部签发的车辆进口批准（VIA）。我们可以协助您完成审批流程。</div>
+    </details>
+
+    <details class="faq">
+      <summary>从询价到送达的完整流程是什么？</summary>
+      <div class="faq-body">四步：（1）您告知货物详情、起运地与目的地；（2）我们出具书面报价并确认时效；（3）您下单付款，我们安排起运地提货和运输；（4）我们办理澳洲清关、处理检疫，并将货物送至您指定地址。全程提供节点跟进。</div>
+    </details>
+
+    <details class="faq">
+      <summary>你们提供全程中文支持吗？</summary>
+      <div class="faq-body">是的。我们在墨尔本、广州、上海的团队同时使用中文和英文。单证、供应商对接、清关文件以及客户沟通全程双语处理。</div>
+    </details>
+
   </div>
 </section>
 

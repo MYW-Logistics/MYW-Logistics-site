@@ -1,0 +1,148 @@
+# MYW Logistics — robots.txt
+# Allow all general search engines and major AI crawlers.
+
+User-agent: *
+Allow: /
+Disallow: /thank-you.html
+Disallow: /thank-you-zh.html
+
+# --- Major search engines ---
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+User-agent: YandexBot
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+# --- AI training & answer engines ---
+# OpenAI (ChatGPT search, training)
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+# Anthropic (Claude)
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+# Google AI / AI Overview
+User-agent: Google-Extended
+Allow: /
+
+# Apple Intelligence
+User-agent: Applebot-Extended
+Allow: /
+
+# Perplexity
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+# Meta AI
+User-agent: Meta-ExternalAgent
+Allow: /
+
+User-agent: FacebookBot
+Allow: /
+
+# Common Crawl (powers many LLMs)
+User-agent: CCBot
+Allow: /
+
+# You.com
+User-agent: YouBot
+Allow: /
+
+# --- China search engines & AI assistants ---
+# ByteDance (Doubao / 豆包, TikTok, Toutiao)
+User-agent: Bytespider
+Allow: /
+
+User-agent: ToutiaoSpider
+Allow: /
+
+# 360 Search (奇虎)
+User-agent: 360Spider
+Allow: /
+
+User-agent: HaosouSpider
+Allow: /
+
+# Sogou (搜狗)
+User-agent: Sogou web spider
+Allow: /
+
+User-agent: Sogou inst spider
+Allow: /
+
+User-agent: Sogou Pic Spider
+Allow: /
+
+# Aliyun / Shenma / Tongyi Qianwen (通义千问)
+User-agent: YisouSpider
+Allow: /
+
+# Tencent Sosou
+User-agent: Sosospider
+Allow: /
+
+# DeepSeek (深度求索)
+User-agent: DeepSeekBot
+Allow: /
+
+User-agent: deepseek-ai
+Allow: /
+
+# Moonshot Kimi (月之暗面)
+User-agent: KimiBot
+Allow: /
+
+User-agent: Moonshot
+Allow: /
+
+# Zhipu AI / 智谱清言
+User-agent: ZhipuBot
+Allow: /
+
+# Baichuan / 百川
+User-agent: BaichuanAI
+Allow: /
+
+# --- Other general & AI crawlers ---
+User-agent: Diffbot
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
+
+User-agent: MistralAI-User
+Allow: /
+
+# Sitemap reference
+Sitemap: https://www.mywlogistics.com.au/sitemap.xml

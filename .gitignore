@@ -1,0 +1,24 @@
+# Editor / agent settings
+.claude/
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+ehthumbs.db
+$RECYCLE.BIN/
+
+# Netlify
+.netlify/
+netlify/functions-internal/
+
+# Local environment
+.env
+.env.*
+*.local
+
+# Logs
+*.log
+npm-debug.log*

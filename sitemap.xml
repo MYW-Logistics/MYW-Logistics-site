@@ -2,13 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
+  <!-- ============ ENGLISH PAGES ============ -->
   <url>
     <loc>https://www.mywlogistics.com.au/</loc>
     <lastmod>2026-05-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="en-au" href="https://www.mywlogistics.com.au/"/>
-    <xhtml:link rel="alternate" hreflang="zh" href="https://www.mywlogistics.com.au/index-zh.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.mywlogistics.com.au/index-zh.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.mywlogistics.com.au/"/>
   </url>
 
   <url>
@@ -17,7 +19,8 @@
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en-au" href="https://www.mywlogistics.com.au/services.html"/>
-    <xhtml:link rel="alternate" hreflang="zh" href="https://www.mywlogistics.com.au/services-zh.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.mywlogistics.com.au/services-zh.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.mywlogistics.com.au/services.html"/>
   </url>
 
   <url>
@@ -26,7 +29,8 @@
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en-au" href="https://www.mywlogistics.com.au/solutions.html"/>
-    <xhtml:link rel="alternate" hreflang="zh" href="https://www.mywlogistics.com.au/solutions-zh.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.mywlogistics.com.au/solutions-zh.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.mywlogistics.com.au/solutions.html"/>
   </url>
 
   <url>
@@ -35,7 +39,8 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-au" href="https://www.mywlogistics.com.au/contact.html"/>
-    <xhtml:link rel="alternate" hreflang="zh" href="https://www.mywlogistics.com.au/contact-zh.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.mywlogistics.com.au/contact-zh.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.mywlogistics.com.au/contact.html"/>
   </url>
 
   <url>
@@ -43,6 +48,9 @@
     <lastmod>2026-05-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en-au" href="https://www.mywlogistics.com.au/guides/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.mywlogistics.com.au/zh/guides/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.mywlogistics.com.au/guides/"/>
   </url>
 
   <url>
@@ -50,6 +58,70 @@
     <lastmod>2026-05-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.95</priority>
+    <xhtml:link rel="alternate" hreflang="en-au" href="https://www.mywlogistics.com.au/guides/importing-from-china-to-australia-2026.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.mywlogistics.com.au/zh/guides/china-to-australia-import-guide-2026.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.mywlogistics.com.au/guides/importing-from-china-to-australia-2026.html"/>
+  </url>
+
+  <!-- ============ CHINESE PAGES (中文页面) ============ -->
+  <url>
+    <loc>https://www.mywlogistics.com.au/index-zh.html</loc>
+    <lastmod>2026-05-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.mywlogistics.com.au/index-zh.html"/>
+    <xhtml:link rel="alternate" hreflang="en-au" href="https://www.mywlogistics.com.au/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.mywlogistics.com.au/"/>
+  </url>
+
+  <url>
+    <loc>https://www.mywlogistics.com.au/services-zh.html</loc>
+    <lastmod>2026-05-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.mywlogistics.com.au/services-zh.html"/>
+    <xhtml:link rel="alternate" hreflang="en-au" href="https://www.mywlogistics.com.au/services.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.mywlogistics.com.au/services.html"/>
+  </url>
+
+  <url>
+    <loc>https://www.mywlogistics.com.au/solutions-zh.html</loc>
+    <lastmod>2026-05-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.mywlogistics.com.au/solutions-zh.html"/>
+    <xhtml:link rel="alternate" hreflang="en-au" href="https://www.mywlogistics.com.au/solutions.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.mywlogistics.com.au/solutions.html"/>
+  </url>
+
+  <url>
+    <loc>https://www.mywlogistics.com.au/contact-zh.html</loc>
+    <lastmod>2026-05-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.mywlogistics.com.au/contact-zh.html"/>
+    <xhtml:link rel="alternate" hreflang="en-au" href="https://www.mywlogistics.com.au/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.mywlogistics.com.au/contact.html"/>
+  </url>
+
+  <url>
+    <loc>https://www.mywlogistics.com.au/zh/guides/</loc>
+    <lastmod>2026-05-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.mywlogistics.com.au/zh/guides/"/>
+    <xhtml:link rel="alternate" hreflang="en-au" href="https://www.mywlogistics.com.au/guides/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.mywlogistics.com.au/guides/"/>
+  </url>
+
+  <url>
+    <loc>https://www.mywlogistics.com.au/zh/guides/china-to-australia-import-guide-2026.html</loc>
+    <lastmod>2026-05-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.95</priority>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.mywlogistics.com.au/zh/guides/china-to-australia-import-guide-2026.html"/>
+    <xhtml:link rel="alternate" hreflang="en-au" href="https://www.mywlogistics.com.au/guides/importing-from-china-to-australia-2026.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.mywlogistics.com.au/guides/importing-from-china-to-australia-2026.html"/>
   </url>
 
 </urlset>
